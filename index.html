@@ -8,18 +8,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600;700&family=Karma:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Meu portifólio</title>
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
 
         <header>
-            <menu>
-                <nav>                 
-                        <h2> &lt;/EC&gt; </h2>
+            <h2 class="logo"> &lt;/EC&gt; </h2>   
 
-                        <span id="hamb" class="material-symbols-outlined" onclick="cliqueMenu()">
-                            
+                <nav>              
+                        
+                       <span id="hamb" class="material-symbols-outlined" onclick="cliqueMenu()">menu </span>
+
+
                         <menu id="imenu">
                             <ul class="cabeçalho">
                                 <li><a href="#">Home</a></li>
@@ -30,7 +32,7 @@
 
         
                 </nav>
-            </menu>
+            
         </header>
         
         <main class="container">
@@ -38,21 +40,76 @@
 
             <section class="child1">
 
-                <h1>Eric Costa</h1>
-                <span class="subtitulo">Web Developer</span>
-                
+                <div class="titulo">
+                    <h1>Eric Costa</h1>
+                    <span class="subtitulo">Web Developer</span>
+                    
+                </div>
+
+                <div class="ilustracao">
+                    <img class="ilustracao1" src="imagens/ilustracao/menino-tel.png" alt="">
+    
+                </div>
 
             </section>
 
-            <div class="child2">
-                <img class="ilustracao1" src="imagens/ilustracao/menino-tel.png" alt="">
-
-            </div>
+            
 
             <section>
 
+                
+                <div id="sobre">
+
+                    <h2 class='titulo-sobreMim'>Sobre Mim</h1>
+
+                        <div id="minhaFoto">
+                            <img src="" alt="">
+                        </div>
+                    <p>
+
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed a officiis dicta facere consectetur aliquam ab necessitatibus repellat nesciunt dolorum! Distinctio consequuntur officiis quaerat. Suscipit sit nisi odit quia dolorem?
+                    </p>
+                </div>
+
 
             </section>
+
+
+            <section>
+                <h2 class="habilidades">Habilidades</h2>
+
+                <div>
+                    #
+                </div>
+
+                <div>
+                    #
+                </div>
+
+                <div>
+                    #
+                </div>
+
+            </section>
+
+
+            <section>
+
+                <h2 class="projetos">Projetos</h2>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere odit nam reiciendis nisi nostrum sequi magnam molestiae! Recusandae, deserunt ad cum minus sequi expedita necessitatibus obcaecati? Beatae dignissimos esse harum!</p>
+            </section>
+
+            <section>
+                <h2 class="contato"> Contato</h2>
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusamus odio corrupti magnam id minus rem? Optio, cupiditate repudiandae exercitationem ipsum, ab obcaecati sapiente, aut provident distinctio at ex autem.
+
+                    <a href="#">Linkedin</a>
+                    <a href="#"> Github</a>
+
+            </section>
+
         </main>
 
         <footer>
@@ -64,6 +121,6 @@
 
         
 
-   
+<script src="/script/menu.js"></script>
 </body>
 </html>
