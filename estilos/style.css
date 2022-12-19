@@ -24,7 +24,7 @@ body, html{
 
 }
 h1{
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', sans-serif;
     display: flex;
     color: #ffffff;
     font-size: 4em;
@@ -48,7 +48,7 @@ nav{
     flex-direction: row;
     justify-content:space-around;
     align-items: center;
-    color: #ffffff;
+    color: #29EFD9;
     
 }
 
@@ -98,6 +98,8 @@ nav{
     flex-basis: 0;
     display: flex;
     padding: 0px;
+    filter: drop-shadow(4px 5px 10px #1F41BB);
+    
 }
 
 
