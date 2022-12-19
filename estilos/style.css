@@ -6,12 +6,15 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@600;700&display=swap');
+
 *{
 
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Exo 2', sans-serif;
     text-decoration: none;
 }
 
@@ -21,61 +24,97 @@ body, html{
 
 }
 h1{
-    font-family: 'Maragsa';
-    color: #3d1c94;
-    font-size: 110px;
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    color: #ffffff;
+    font-size: 4em;
     font-weight: normal;
+    text-align: center;
+    justify-content: center;
+    flex-basis: 0;
+    flex-direction: column;
 }
 
 header{
 
     width: 100vw;
     height: 50px;
-    background-color: aqua;
+    background-color:#101728;
 }
 
 nav{
 
     display: flex;
+    flex-direction: row;
     justify-content:space-around;
+    align-items: center;
+    color: #ffffff;
     
 }
 
-span{
-    font-size: 13px;
+.cabeçalho{
+    color: #ffffff;
 }
 
-main{
-    background-color: white;
-    width: 800px;
-    height: 100vh;
-   margin: auto;
-}
-
-section{
-
-    background:rgb(115, 110, 167);
-    width: 200px;
-    height: 300px;
-}
-
-img{
-    background-color: brown;
-}
-
-a{
-    background-color: darkkhaki;
+.subtitulo{
+    display: flex;
+    flex-direction: column;
+    font-size:1.3em;
+    color: #29EFD9;
+    align-items: center;
+    background-color: #101728;
+    flex-basis: 1;
+    
 }
 
 
 .container{
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
+    background-color: #101728;
+    width: 90vw;
+    height: 100vh;
     justify-content: center;
-    flex-wrap: nowrap;
+    align-items: center;
+    margin: auto;
     
 }
+
+.child1{
+
+    background:#101728;
+    width: 70vw;
+    height: 20vh;
+    flex-basis: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 1em;
+    
+}
+
+.child2>img{
+   
+    flex-basis: 0;
+    display: flex;
+    padding: 0px;
+}
+
+
+a{
+    
+    color: #ffffff;
+}
+
+ul > li{
+
+    display: flex;
+    text-decoration: none;
+    flex-direction: row;
+}
+
+
+
 
 footer{
     background-color: black;
