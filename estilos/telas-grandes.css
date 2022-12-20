@@ -16,34 +16,40 @@
         background-color:bisque;
         box-shadow: 0px 3px 10px rgba(251, 249, 249, 0.597);
         position: fixed;
+        display: flex;
+        justify-content: space-between;
         width: 100vw;
     }
 
-    
+        
 .navBar{
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 6rem;
     align-items: center;
+    background-color: bisque;
 }
 
 .logo{
     display: flex;
     align-items: center;
+    order: 0;
 }
 
 .logo > h1{
     color: rgb(14, 14, 14);
 }
 
-.navList{
+.navList {
     display: flex;
+    flex-direction: row;
     align-items: center;
 
 }
 
 .navList > ul{
     display: flex;
+    order: 2;
     flex-direction: row;
     justify-content: center;
     list-style: none;
@@ -58,6 +64,16 @@
     text-decoration: none;
     font-size: 1.15rem;
     color: rgb(4, 4, 4);
+    font-size: 1.3em;
+}
+
+.sociais{
+    display: flex;
+    order: 3;
+}
+
+.botaoCelular{
+    display: flex;
 }
 
  .redesSociais {
