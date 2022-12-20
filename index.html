@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/style.css">  
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600;700&family=Karma:wght@400;700&display=swap" rel="stylesheet">
@@ -15,24 +16,34 @@
 <body onresize="mudouTamanho()">
 
         <header>
-            <h2 class="logo"> &lt;/EC&gt; </h2>   
+            <nav class='navBar'>
+                <div class="logo">
+                    <h1>&lt;EC/&gt;</h1>
+                </div>
 
-                <nav>              
-                        
-                       <span id="hamb" class="material-symbols-outlined" onclick="cliqueMenu()">menu </span>
+                <div class="menuResponsivo">
+                    <div class="botaoCelular">
+                        <span id="hamb" class="material-symbols-outlined" onclick="cliqueMenu()">menu </span>
+                    </div>
+                    <div class="navList" id="inavList">
+                    
+                        <ul>
+                            <li class="navIten"><a class="navLink" href="#">Home</a></li>
+                            <li class="navIten"><a class="navLink" href="#">Sobre Mim</a></li>
+                            <li class="navIten"> <a class="navLink" href="#">Habilidades</a></li>
+                            <li class="navIten"> <a class="navLink" href="#">Projetos</a></li>
+                            <li class="navIten"> <a class="navLink" href="#">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
 
-
-                        <menu id="imenu">
-                            <ul class="cabeçalho">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Sobre mim</a></li>
-                                <li><a href="#">Projetos</a></li>
-                            </ul>
-                        </menu>
-
-        
-                </nav>
+                <div class="sociais">
+                    <a href="https://github.com/ericcostaa" target="_blank"><img class="redesSociais" src="imagens/github.png" alt="Github"></a>
+                    <a href="https://www.linkedin.com/in/eric-costa-santos/" target="_blank"> <img class="redesSociais" src="imagens/linkedin.png" alt="Linkedin"></a>
             
+                </div>
+            </nav>
+                      
         </header>
         
         <main class="container">

@@ -1,19 +1,19 @@
 function cliqueMenu(){
 
-    if(imenu.style.display == 'block'){
-        imenu.style.display = 'none'
+    if(inavList.style.display == 'block'){
+        inavList.style.display = 'none'
     } else{
-        imenu.style.display = 'block'
+        inavList.style.display = 'block'
     }
 }
 
 function mudouTamanho(){
 
 if (window.innerWidth >= 768){
-    imenu.style.display = 'block'
+    inavList.style.display = 'block'
 }
 
 else {
-    imenu.style.display = 'none'
+    inavList.style.display = 'none'
 }
 }
