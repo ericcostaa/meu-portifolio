@@ -12,111 +12,11 @@
     color: #ffffff;
 }
 
-header{
-  
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.597);
-    position: fixed;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #ffffff;
-}
-
-
 
 body, html{
 
     background-color: cornflowerblue;
-
-}
-
-.container-header{
-    width: 100vw;
-    background-color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5rem 6rem;
-    align-items: center;
-    height: 50px;
-}
-
-
-.logo{
-    display: flex;
-    align-items: center;
-    order: 0;
-}
-
-.logo > h1{
-    color: rgb(14, 14, 14);
-}
-
-.navList{
-    display: none;
-   
-
-}
-
-
-.navList > ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    order: 5;
-
-}
-
-.navIten{
-    margin: 0 15px;
     
-}
-
-.navLink{
-    text-decoration: none;
-    font-size: 1.15rem;
-    color: rgb(4, 4, 4);
-    margin: 0 15px;
-}
-
-.navLink:hover{
-    background-color: black;
-    color: white;
-}
-
-.sociais{
-    display: flex;
-    order: 2;
-}
-
-.botaoCelular{
-    display: flex;
-    order: 1;
-}
-
- .redesSociais {
-
-    border: none;
-    width: 40px;
-    height: 40px;
-    background-color: #ffffff;
-    margin-right: 10px;
-}
-
-#hamb{
-    display: block;
-    text-align: center;
-    cursor: pointer;
-    color: #101728;
-    
-    
-}
-
-#hamb:hover{
-
-    background-color:#1017284a
 }
 
 
@@ -154,8 +54,7 @@ h2{
     display: flex;
     flex-direction: column;
     background-color: #101728;
-    width: 90vw;
-    height: 100vh;
+    width: 90vw;    
     justify-content: center;
     align-items: center;
     margin: auto;
