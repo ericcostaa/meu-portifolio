@@ -5,66 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="estilo/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Meu portifólio</title>
 </head>
 
-<body class="bg-gray-900" onresize="mudouTamanho()">
+<body class="bg-gray-900 h-screen" onresize="mudouTamanho()">
 
     <main class="container h-screen w-screen max-w-4xl m-auto flex flex-col">
 
-        <header class="flex bg-indigo-700 container w-screen max-w-4xl h-14 items-center">
+        <header class="flex flex-grow-0 basis-auto bg-indigo-700 container w-screen max-w-4xl h-14 items-center">
 
             <div>
                 <h1 class="text-white text-lg">&lt;EC/&gt;</h1>
             </div>
 
-            <nav class=" flex items-center justify-around w-full text-white">               
+            <div class=" container flex flex-col">
 
-                    <a class="text-white" href=""> Home
-                        
-                    </a>
-                    <a href=""> Sobre Mim
-                       
-                    </a>
-                    <a href=""> Habilidades
-                       
-                    </a>
-                    <a href=""> Projetos
-                       
-                    </a>
-                    <a href=""> Contato
-                       
-                    </a>
+                <span class="material-symbols-outlined text-center w-screen max-w-3xl flex-grow-0 basis-auto" onclick="cliqueMenu()">
+                    menu
+                    </span>
+
+                <nav id="inavList" class=" flex flex-col mx-5 md:flex-row items-center justify-around w-full text-white bg-orange-300">
+                        <a class="text-white" href=""> Home
                 
-
-            </nav>
+                        </a>
+                        <a href=""> Sobre Mim
+                
+                        </a>
+                        <a href=""> Habilidades
+                
+                        </a>
+                        <a href=""> Projetos
+                
+                        </a>
+                        <a href=""> Contato
+                
+                        </a>
+                
+                </nav>
+            </div>
         </header>
 
-        <section class="flex flex-col text-center">
+        <section class="flex flex-col text-center w-full">
 
              <div class="container grid grid-cols-1 md:grid-cols-2 ">
 
-                <div class="">
-                    <img src="imagens/ilustracao/menino.png" alt="">
+                <div class=" w-96 flex m-auto md:w-auto md:order-2">
+                    <img src="imagens/ilustracao/menino.png" alt="Ilustração">
                  </div>
 
                  <div class="flex flex-col justify-center">
-                     <h1 class="text-7xl text-center justify-center text-white ">Eric Costa</h1>
-                     <span class="text-white">Desenvolvedor Web</span>
+                     <h1 class="text-4xl md:text-7xl md:text-left md:mx-3 text-center justify-center text-white ">Eric Costa</h1>
+                     <span class="text-indigo-400 md:text-left md:mx-5">Desenvolvedor Web</span>
                  </div>                
              </div>
 
         </section>
 
-        <section class="flex flex-col justify-center bg-gray-200">
+        <section class="flex container flex-col flex-grow-1 basis-auto md:flex-row justify-center bg-gray-200">
 
-            <h1 class="my-2 text-white text-center text-lg"> Sobre Mim</h1>
+            <div class="flex-col order-2 md:order-1">
+                <h1 class="my-2 text-black text-center text-lg"> Sobre Mim</h1>
 
-            <p>Programador Front-End de HTML5, CSS3 e JavaScript. Apaixonado por tecnologia e na busca por adquirir novas oportunidades em desenvolvimento web.</p>
+                <p class=" flex text-center items-center my-5">Programador Front-End de HTML5, CSS3 e JavaScript. Apaixonado por tecnologia e na busca por adquirir novas oportunidades em desenvolvimento web.</p>
+            </div>
 
-            <div class="flex justify-center">
+            <div class="flex justify-center order-1 md:order-2 my-5 mx-5">
 
-                <p></p>
+                <img class="rounded-full w-60 md:w-auto" src="imagens/minha-foto.jpg" alt="Minha foto">
             </div>
         </section>
 
@@ -107,7 +115,7 @@
             </div>
         </section>
 
-        <footer class="bg-black text-white text-center fixed bottom-0 w-full m-auto max-w-4xl">
+        <footer class="bg-black text-white text-center fixed bottom-0 w-full basis-24 flex-grow-0 m-auto max-w-4xl">
             <p> Site criado por Eric Costa</p>
         </footer>
        
