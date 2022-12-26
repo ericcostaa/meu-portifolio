@@ -1,4 +1,4 @@
-function Menu(e){
+function cliqueMenu(e){
 
  let lista = document.querySelector('ul');
 
