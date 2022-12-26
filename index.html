@@ -13,9 +13,7 @@
 
     <main class="container h-screen w-screen max-w-4xl m-auto flex flex-col">
 
-        <header>
-
-            
+        <header>          
            
 
                 <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
@@ -136,7 +134,16 @@
 
         
 
-<script src="/codigojs/navmenu.js"> </script>
+<script>
+
+function cliqueMenu(e){
+
+let lista = document.querySelector('ul');
+
+e.name === 'menu' ? (e.name = "close",lista.classList.add('top-[80px]'), lista.classList.add('opacity-100')) :( e.name = "menu" ,lista.classList.remove('top-[80px]'),lista.classList.remove('opacity-100'))
+
+}
+</script>
 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
