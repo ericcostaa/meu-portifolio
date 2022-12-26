@@ -1,19 +1,7 @@
-function cliqueMenu(){
+function Menu(e){
 
-    if(inavList.style.display == 'flex'){
-        inavList.style.display = 'none'
-    } else{
-        inavList.style.display = 'flex'
-    }
-}
+ let lista = document.querySelector('ul');
 
-function mudouTamanho(){
+ e.name === 'menu' ? (e.name = "close",lista.classList.add('top-[80px]'), lista.classList.add('opacity-100')) :( e.name = "menu" ,lista.classList.remove('top-[80px]'),lista.classList.remove('opacity-100'))
 
-if (window.innerWidth >= 768){
-    inavList.style.display = 'flex'
-}
-
-else {
-    inavList.style.display = 'none'
-}
 }

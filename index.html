@@ -5,42 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="estilo/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  
     <title>Meu portifólio</title>
 </head>
 
-<body class="bg-gray-900 h-screen" onresize="mudouTamanho()">
+<body class="bg-red-300 h-screen">
 
     <main class="container h-screen w-screen max-w-4xl m-auto flex flex-col">
 
-        <header class="flex flex-grow-0 basis-auto bg-indigo-700 container w-screen max-w-4xl h-14 items-center">
+        <header>
 
-            <div>
-                <h1 class="text-white text-lg">&lt;EC/&gt;</h1>
-            </div>
+            
+           
 
-            <div class=" container flex flex-col">
+                <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
 
-                <span class="material-symbols-outlined text-center w-screen max-w-3xl flex-grow-0 basis-auto" onclick="cliqueMenu()">
-                    menu
-                    </span>
+                    <div class="flex justify-between items-center">
 
-                <nav id="inavList" class=" flex flex-col mx-5 md:flex-row items-center justify-around w-full text-white bg-orange-300">
-                        <a class="text-white" href=""> Home
-                
-                        </a>
-                        <a href=""> Sobre Mim
-                
-                        </a>
-                        <a href=""> Habilidades
-                
-                        </a>
-                        <a href=""> Projetos
-                
-                        </a>
-                        <a href=""> Contato
-                
-                        </a>
+                        <span class="text-black text-2xl cursor-pointer">&lt;EC/&gt;</span>
+                   
+
+                    
+                        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+        
+                            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        
+                        </span>
+
+                    </div>
+        
+                       
+                    <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+
+                        <li class="mx-4 my-6 md:my-0">
+                          <a href="#" class="text-xl hover:text-indigo-700 duration-500" >HOME</a>
+                        </li>
+                        <li class="mx-4 my-6 md:my-0">
+                          <a href="#" class="text-xl hover:text-indigo-700 duration-500">SOBRE MIM</a>
+                        </li>
+                        <li class="mx-4 my-6 md:my-0">
+                          <a href="#" class="text-xl hover:text-indigo-700 duration-500">PROJETOS</a>
+                        </li>
+                        <li class="mx-4 my-6 md:my-0">
+                          <a href="#" class="text-xl hover:text-indigo-700 duration-500">HABILIDADES</a>
+                        </li>
+                        <li class="mx-4 my-6 md:my-0">
+                          <a href="#" class="text-xl hover:text-indigo-700 duration-500">CONTATO</a>
+                        </li>
+
+                    </ul>
                 
                 </nav>
             </div>
@@ -126,6 +139,9 @@
 
         
 
-<script src="/script/menu.js"></script>
+<script src="/script/menu.js"> </script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
