@@ -76,7 +76,7 @@
         <section class="flex container flex-col flex-grow-1 basis-auto md:flex-row justify-center bg-gray-200">
 
             <div class="flex-col order-2 md:order-1">
-                <h1 class="my-2 text-black text-center text-lg"> Sobre Mim</h1>
+                <h1 class="my-2 text-black text-center text-lg font-bold"> Sobre Mim</h1>
 
                 <p class=" flex text-center items-center my-5">Programador Front-End de HTML5, CSS3 e JavaScript. Apaixonado por tecnologia e na busca por adquirir novas oportunidades em desenvolvimento web.</p>
             </div>
@@ -87,9 +87,9 @@
             </div>
         </section>
 
-        <section class="flex justify-center text-white bg-gray-900" >
+        <section class="flex flex-grow-1 basis-auto md:flex-row justify-center text-white bg-gray-900 w-full" >
 
-            <h1> Habilidades</h1>
+            <h1 class="text-center text-lg font-bold"> Habilidades</h1>
 
             <div>
                 <div>
@@ -110,27 +110,61 @@
             </div>
         </section>
 
-        <section class="flex justify-center bg-gray-200">
-            <h1>Projetos</h1>
+        <section class="flex flex-col justify-center bg-gray-200">
+            <h1 class="text-center text-lg font-bold">Projetos</h1>
 
-            <div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
+                <div class="m-3">
+                    <img src="imagens/embreve2.jpg" alt="Projeto">
+                </div>
+
+                <div class="m-3">
+                    <img src="imagens/embreve2.jpg" alt="Projeto">
+                </div>
+
+                <div class="m-3">
+                    <img src="imagens/embreve2.jpg" alt="Projeto">
+                </div>
+
+                <div class="m-3">
+                    <img src="imagens/embreve2.jpg" alt="Projeto">
+                </div>
+
+                <div class="m-3">
+                    <img src="imagens/embreve2.jpg" alt="Projeto">
+                </div>
+
+                <div class="m-3">
+                    <img src="imagens/embreve2.jpg" alt="Projeto">
+                </div>               
+
+            
             </div>
+
+
+                       </div>
         </section>
 
         <section class="text-white bg-gray-900">
-            <h1 class="text-center">Contato</h1>
+            <h1 class="text-center text-lg font-bold">Contato</h1>
 
             <div class="container flex flex-col md:flex-row justify-center items-center">
                 <div>
-                    <a href="https://github.com/ericcostaa" target="_blank">
-                        <ion-icon name="logo-github"></ion-icon>
-                    </a>
+                    <button class="bg-indigo-700 px-8 py-1 m-2 md:m-5 rounded">
+                        <a href="https://github.com/ericcostaa" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                            <span>Github</span>
+                        </a>
+                    </button>
                 </div>
                 <div>
-                    <a href="https://www.linkedin.com/in/eric-costa-santos/" target="_blank">
-                        <ion-icon name="logo-linkedin"></ion-icon>
-                    </a>
+                    <button class="bg-indigo-700 px-8 py-1 m-2 md:m-5 rounded">
+                        <a href="https://www.linkedin.com/in/eric-costa-santos/" target="_blank">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                            <span>Linkedin</span>
+                        </a>
+                    </button>
                 </div>
             </div>
         </section>
